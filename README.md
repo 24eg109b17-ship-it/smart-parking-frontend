@@ -4,6 +4,8 @@ React 19 and Vite 8 frontend for the Smart Parking Management System.
 
 [Backend repository](https://github.com/24eg109b17-ship-it/smart-parking-backend)
 
+[Live website](https://smart-parking-campus.onrender.com) · [API health](https://smart-parking-api-production-141e.up.railway.app/api/health)
+
 ## Features
 
 - Driver registration/login and restored authenticated sessions.

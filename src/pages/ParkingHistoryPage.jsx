@@ -63,7 +63,7 @@ function ParkingHistoryPage() {
             <div className="stat-icon green">💰</div>
             <div className="stat-info">
               <div className="stat-value">₹{totalAmount.toFixed(2)}</div>
-              <div className="stat-label">Total Paid</div>
+              <div className="stat-label">Total Charges</div>
             </div>
           </div>
         </div>
