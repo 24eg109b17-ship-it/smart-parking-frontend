@@ -25,8 +25,8 @@ function RegisterPage() {
       return;
     }
 
-    if (formData.password.length < 6) {
-      setError('Password must be at least 6 characters.');
+    if (formData.password.length < 8 || formData.password.length > 72) {
+      setError('Password must contain 8 to 72 characters.');
       return;
     }
 
@@ -73,7 +73,7 @@ function RegisterPage() {
 
           <div className="form-group">
             <label className="form-label">Password *</label>
-            <input type="password" name="password" className="form-input" placeholder="Min 6 characters" value={formData.password} onChange={handleChange} />
+            <input type="password" name="password" className="form-input" placeholder="8–72 characters" minLength={8} maxLength={72} required autoComplete="new-password" value={formData.password} onChange={handleChange} />
           </div>
 
           <button type="submit" className="btn btn-primary" disabled={loading} style={{ width: '100%', justifyContent: 'center' }}>
